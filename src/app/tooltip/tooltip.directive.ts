@@ -8,7 +8,7 @@ import { TooltipComponent } from './tooltip.component';
   selector: '[ptTooltip]',
 })
 export class TooltipDirective implements OnInit {
-  @Input() text = '';
+  @Input('ptTooltip') text = '';
 
   private overlayRef: OverlayRef;
 
